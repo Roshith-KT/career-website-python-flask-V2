@@ -1,9 +1,9 @@
 <div class="border-bottom row" style="margin-bottom:16px; padding-bottom:5px;">
     <div class="col-10">
-        <h4 style="color:rgb(120,120,120); margin-bottom:4px;">{{job.role}}</h4>
+        <h4 style="color:rgb(120,120,120); margin-bottom:4px;">{{job.job_name}}</h4>
         <div><b>Location:</b>{{job.location}}</div>
-        {% if 'Salary' in job %}
-        <div><b>Salary:</b>{{job.Salary}}</div>
+        {% if job.salary is not none %}
+        <div><b>Salary:</b>{{job.salary}}</div>
         {% endif %}
     </div>
     <div class="col-2">
